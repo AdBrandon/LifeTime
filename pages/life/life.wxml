@@ -1,0 +1,20 @@
+<view class="container">
+<view class="nav">
+  <text bindtap="navigate">Year</text>
+  <text>Life</text>
+</view>
+<view class="title">
+<text>人生只有<text class="number">900</text>个月</text>
+</view>
+<view class="box" style="width:{{boxWidth}}">
+  <view class="monthList" wx:for="{{list}}"  wx:key="index" style="background-color:{{item.color}}" data-index="{{index}}" bindtap="pick"></view>
+</view>
+<view>
+  <text class="info-text">
+    {{text}}
+  </text>
+</view>
+<view class="enjoy">
+  <text bindtap="reset">Reset</text>
+</view>
+</view>

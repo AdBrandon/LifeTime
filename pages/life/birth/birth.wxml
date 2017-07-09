@@ -1,0 +1,17 @@
+<!--birth.wxml-->
+<view class="container">
+<view class="text">
+  <text>
+  <text class="title">人生只有900个月</text>
+  一个30×30的表格
+  每一个格子代表一个月
+  你的全部人生就在这个表格上
+  请珍惜每一天</text>
+</view>
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="1900-01-01" end="{{today}}" bindchange="bindDateChange">  
+    <button>选择生日</button> 
+  </picker>  
+</view> 
+
+</view>

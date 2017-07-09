@@ -1,0 +1,54 @@
+/* pages/life/life.wxss */
+.nav,.enjoy{ 
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+.nav text{
+  width: 50%;
+  float: left;
+  text-align: center;
+  color: #f6f5ec;
+}
+.nav text:first-child{
+  box-sizing: border-box;
+  border-right: 2px solid #f6f5ec;
+}
+.nav text:first-child{
+  color: #33a3dc;
+}
+.enjoy{
+  position: absolute;
+  bottom: 0;
+  color: #f2eada;
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+}
+.title{
+  margin-bottom: 15px;
+}
+.title text{
+  font-size: 1.2rem;
+  color: #8a8c8e;
+}
+.title text.number{
+  font-size: 1.6rem;
+}
+.box{
+  width: 720rpx;
+}
+.monthList{
+  width: 20rpx;
+  height: 20rpx;
+  margin: 2rpx;
+  border-radius: 3rpx;
+  float: left;
+  background-color: blue;
+}
+.info-text{
+  line-height: 1.4em;
+  color: #7bbfea	;
+  text-align:center;
+  display: block;
+}

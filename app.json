@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/life/life",
+    "pages/life/birth/birth",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fdfdfd",
+    "navigationBarTitleText": "Life Time",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
+<view class="nav">
+  <text>Year</text>
+  <text bindtap="navigate">Life</text>
+</view>
+
+
+    <view class="year-circle">
+      <view class="inner">
+        <view class="spiner" style="transform:rotate({{spinerTrans}}deg);transition:transform {{spinerSpeed}}s linear"></view>
+        <view class="masker"></view>
+        <view class="filler" style="display:{{fillerData}};transform:rotate({{fillerTrans}}deg);transition:transform {{fillerSpeed}}s linear"></view>
+      </view>
+    </view>
+    <text class="year-text" style="filter: grayscale({{textGray}});transition:all {{textSpeed}}s linear">{{year}}</text>
+    <view class="info"  bindtap="expShow">
+        <text class="info-text">{{year}}年已经过去{{per}}%
+        <text class="info-name">{{name}}，</text>
+        你的年度计划完成了多少呢？
+        <text class="info-text-exp">{{exp}}</text></text>
+    </view>
+
+
+
+    <view class="exp-choose" style="height:{{expHeight}};top:{{expTop}}">
+    <view class="exp-box">
+      <text data-index="0" bindtap="changeExp">{{exps[0]}}</text>
+      <text data-index="1" bindtap="changeExp">{{exps[1]}}</text>
+      <text data-index="2" bindtap="changeExp">{{exps[2]}}</text>
+      <text data-index="3" bindtap="changeExp">{{exps[3]}}</text>
+      <text data-index="4" bindtap="changeExp">{{exps[4]}}</text>
+      <text data-index="5" bindtap="changeExp">{{exps[5]}}</text>
+      <text data-index="6" bindtap="changeExp">{{exps[6]}}</text>
+      <text data-index="7" bindtap="changeExp">{{exps[7]}}</text>
+      <text data-index="8" bindtap="changeExp">{{exps[8]}}</text>
+      <input class="input" placeholder="自定义内容" bindconfirm="expInput" value="{{inputValue}}"/>
+    </view>
+    </view>
+</view>
