@@ -20,7 +20,7 @@
         <view class="filler" style="display:{{fillerData}};transform:rotate({{fillerTrans}}deg);transition:transform {{fillerSpeed}}s linear"></view>
       </view>
     </view>
-    <text class="year-text" style="filter: grayscale({{textGray}});transition:all {{textSpeed}}s linear">{{year}}</text>
+    <text class="year-text" style="filter: grayscale({{textGray}});transition:all {{textSpeed}}s ease;transform:rotate({{rotate}}deg);" bindtap="yearTap">{{year}}</text>
     <view class="info"  bindtap="expShow">
         <text class="info-text">{{year}}年已经过去{{per}}%
         <text class="info-name">{{name}}，</text>

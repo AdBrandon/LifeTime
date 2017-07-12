@@ -14,6 +14,9 @@
     {{text}}
   </text>
 </view>
+<view class="detail">
+  {{detail}}
+</view>
 <view class="enjoy">
   <text bindtap="reset">Reset</text>
 </view>

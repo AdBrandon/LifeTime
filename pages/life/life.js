@@ -68,7 +68,6 @@ function setForm(birthday,that){
 }
 Page({
   navigate: function () {
-    app.list = false;
     wx.navigateBack()
   },
   reset:function(){
@@ -86,7 +85,7 @@ Page({
       image = "img/child.png"
     } else if (age < 17){
       image = "img/junior.png"
-    } else if (age < 30) {
+    } else if (age < 25) {
       image = "img/youth.png"
     } else if (age < 45) {
       image = "img/middle.png"
@@ -100,12 +99,6 @@ Page({
       image: image,
       duration: 1000
     })
-  },
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
   },
 
   /**
@@ -151,7 +144,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    app.list = false;
   },
 
   /**
